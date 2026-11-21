@@ -185,7 +185,7 @@ export const menuItems: MenuItem[] = [
     ingredientsTr: ["Kuzu İncik", "Tütsülü Firik Buğdayı", "Kök Kereviz", "Nar Ekşisi", "Kemik Suyu"],
     ingredientsEn: ["Lamb Shank", "Smoked Firik Grain", "Root Mirepoix", "Pomegranate Glaze", "Bone Stock"],
     allergens: ["Gluten", "Süt Ürünü", "Kereviz"],
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1514944298352-f67d4f9bf4f9?q=80&w=1200&auto=format&fit=crop",
     calories: 780,
   },
   {
@@ -219,7 +219,7 @@ export const menuItems: MenuItem[] = [
     ingredientsTr: ["El Açması Yufka", "Manda Kaymağı", "Boz Fıstık", "Vanilya", "Keçi Sütü"],
     ingredientsEn: ["Crisp Filo", "Buffalo Cream", "Emerald Pistachio", "Vanilla", "Goat Milk"],
     allergens: ["Gluten", "Süt Ürünü", "Sert Kabuklu Yemiş"],
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1200&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=1200&auto=format&fit=crop",
     calories: 440,
   },
   {
@@ -234,7 +234,7 @@ export const menuItems: MenuItem[] = [
     ingredientsTr: ["Taze Krem Peynir", "Kavrulmuş Tahin", "Taze Krema", "Bodrum İnciri"],
     ingredientsEn: ["Cream Cheese", "Stoneground Tahini", "Heavy Cream", "Black Figs"],
     allergens: ["Süt Ürünü", "Yumurta", "Susam"],
-    image: "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?q=80&w=1200&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1200&auto=format&fit=crop",
     calories: 490,
   },
 
