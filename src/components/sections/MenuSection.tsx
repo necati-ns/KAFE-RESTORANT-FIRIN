@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { menuCategories, menuItems, MenuItem } from "@/config/menu-data";
-import { Sparkles, Info, MessageSquare } from "lucide-react";
+import { Sparkles, Info, MessageSquare, ChevronLeft, ChevronRight } from "lucide-react";
 import { formatWhatsAppOrder, getWhatsAppUrl } from "@/lib/utils/whatsapp";
 
 interface MenuSectionProps {
@@ -40,24 +40,40 @@ export function MenuSection({ onSelectItem }: MenuSectionProps) {
           </p>
         </div>
 
-        {/* Category Filters Tabs */}
-        <div className="flex items-center justify-start sm:justify-center overflow-x-auto pb-4 mb-14 space-x-2 scrollbar-none">
-          {menuCategories.map((cat) => {
-            const isActive = activeCategory === cat.id;
-            return (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
-                className={`whitespace-nowrap px-4 py-2 rounded-sm text-xs md:text-sm font-sans-body uppercase tracking-wider transition-all duration-200 cursor-pointer ${
-                  isActive
-                    ? "bg-[#222820] text-white shadow-md font-semibold"
-                    : "bg-white/60 text-[#352820]/75 hover:bg-white hover:text-[#222820] border border-[#D8CBBF]/40"
-                }`}
-              >
-                {lang === "tr" ? cat.labelTr : cat.labelEn}
-              </button>
-            );
-          })}
+        {/* Category Filters with Visual Scroll Indicators & Horizontal Arrows */}
+        <div className="relative max-w-5xl mx-auto mb-14">
+          {/* Scroll instruction for mobile/tablet */}
+          <div className="flex sm:hidden items-center justify-center space-x-1.5 text-[11px] font-mono-meta text-[#A85B3F] mb-3">
+            <ChevronLeft className="w-3.5 h-3.5 animate-pulse" />
+            <span>{t("Kategorileri kaydırarak inceleyin", "Swipe to browse categories")}</span>
+            <ChevronRight className="w-3.5 h-3.5 animate-pulse" />
+          </div>
+
+          {/* Left subtle fade */}
+          <div className="pointer-events-none absolute left-0 top-0 bottom-3 w-8 bg-gradient-to-r from-[#F5EFEB] to-transparent z-10 hidden sm:block" />
+          
+          {/* Category Tabs Wrapper */}
+          <div className="flex items-center sm:justify-center overflow-x-auto pb-3 px-4 space-x-2.5 scrollbar-thin scrollbar-thumb-[#D8CBBF] scrollbar-track-transparent snap-x">
+            {menuCategories.map((cat) => {
+              const isActive = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={`whitespace-nowrap px-4 py-2.5 rounded-sm text-xs md:text-sm font-sans-body uppercase tracking-wider transition-all duration-200 cursor-pointer shrink-0 snap-center shadow-xs ${
+                    isActive
+                      ? "bg-[#222820] text-white shadow-md font-semibold ring-2 ring-[#A85B3F]"
+                      : "bg-white/80 text-[#352820]/80 hover:bg-white hover:text-[#222820] border border-[#D8CBBF]"
+                  }`}
+                >
+                  {lang === "tr" ? cat.labelTr : cat.labelEn}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Right subtle fade */}
+          <div className="pointer-events-none absolute right-0 top-0 bottom-3 w-8 bg-gradient-to-l from-[#F5EFEB] to-transparent z-10 hidden sm:block" />
         </div>
 
         {/* Menu Items Grid */}
