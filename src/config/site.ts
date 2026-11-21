@@ -51,7 +51,7 @@ export const siteConfig = {
     },
   },
   social: {
-    instagram: "https://instagram.com/nscoding",
+    instagram: "https://instagram.com/nscoding.tr",
     whatsappDemo: "905510789071",
     email: "nscodingtr@gmail.com",
   },
