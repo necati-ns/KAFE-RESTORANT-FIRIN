@@ -52,7 +52,7 @@ export const siteConfig = {
   },
   social: {
     instagram: "https://instagram.com/nscoding",
-    whatsappDemo: "905000000000", // Demo placeholder as instructed
-    email: "atelier-demo@nscoding.com.tr",
+    whatsappDemo: "905510789071",
+    email: "nscodingtr@gmail.com",
   },
 };

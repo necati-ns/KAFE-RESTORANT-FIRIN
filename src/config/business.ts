@@ -8,21 +8,21 @@ export const businessConfig = {
   name: "NSCODING RESTAURANT · CAFÉ · BAKERY",
   subtitle: "Atelier · Mutfak · Fırın / Kitchen · Bakery · Coffee",
   address: {
-    street: "Karaköy Kemankeş Cad. No: 42 (Demo Lokasyon)",
-    district: "Beyoğlu / Karaköy",
-    city: "İstanbul",
+    street: "Karabağlar (Demo Lokasyon)",
+    district: "Karabağlar",
+    city: "İzmir",
     country: "Türkiye",
-    postalCode: "34425",
+    postalCode: "35140",
     geo: {
-      latitude: 41.0256,
-      longitude: 28.9741,
+      latitude: 38.3736,
+      longitude: 27.1287,
     },
   },
   contact: {
-    phoneDisplay: "+90 (212) 555 0192 (Demo Rezervasyon Hattı)",
-    phoneClean: "+902125550192",
-    whatsappNumber: "905000000000", // Demo WhatsApp placeholder
-    email: "info@nscoding-demo.com",
+    phoneDisplay: "+90 (551) 078 9071 (Demo Rezervasyon Hattı)",
+    phoneClean: "+905510789071",
+    whatsappNumber: "905510789071",
+    email: "nscodingtr@gmail.com",
   },
   hours: {
     tr: [
