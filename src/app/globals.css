@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-deep-olive: #222820;
+    --color-warm-cream: #F5EFEB;
+    --color-dark-cocoa: #2D211A;
+    --color-terracotta: #A85B3F;
+    --color-muted-sage: #7F8873;
+    --color-warm-stone: #D8CBBF;
+    --color-warm-stone-light: #ECE5DC;
+
+    --background: var(--color-warm-cream);
+    --foreground: var(--color-dark-cocoa);
+  }
+
+  * {
+    border-color: var(--color-warm-stone);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-warm-cream);
+    color: var(--color-dark-cocoa);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--color-warm-cream);
+    color: var(--color-dark-cocoa);
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom Selection styling */
+  ::selection {
+    background-color: var(--color-terracotta);
+    color: #ffffff;
+  }
+}
+
+/* Custom Typography helpers */
+.font-serif-title {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.font-sans-body {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-mono-meta {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Texture overlays */
+.grain-overlay {
+  background-image: radial-gradient(rgba(45, 33, 26, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-warm-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-warm-stone);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-sage);
+}
