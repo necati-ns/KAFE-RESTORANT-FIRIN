@@ -35,7 +35,7 @@ export function SignatureSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-28">
           <div className="lg:col-span-7 relative aspect-[16/11] rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
             <Image
-              src="https://images.unsplash.com/photo-1514944298352-f67d4f9bf4f9?q=80&w=1400&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1400&auto=format&fit=crop"
               alt="14-Hour Braised Lamb Shank with Firik"
               fill
               sizes="(max-width: 1024px) 100vw, 60vw"

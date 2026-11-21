@@ -185,7 +185,7 @@ export const menuItems: MenuItem[] = [
     ingredientsTr: ["Kuzu İncik", "Tütsülü Firik Buğdayı", "Kök Kereviz", "Nar Ekşisi", "Kemik Suyu"],
     ingredientsEn: ["Lamb Shank", "Smoked Firik Grain", "Root Mirepoix", "Pomegranate Glaze", "Bone Stock"],
     allergens: ["Gluten", "Süt Ürünü", "Kereviz"],
-    image: "https://images.unsplash.com/photo-1514944298352-f67d4f9bf4f9?q=80&w=1200&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1200&auto=format&fit=crop",
     calories: 780,
   },
   {
